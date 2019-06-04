@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        
+        $(document).ready(function(){
+          
+          $(window).scroll(function(){
+
+            if($(window).scrollTop()>300){
+              $('nav').addClass('red');
+            }else{
+              $('nav').removeClass('red');
+            }
+
+          });
+
+     });    
+        
+        </script>
+        <script>
+          AOS.init({
+              offset: 30,
+              duration: 1500,
+          });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <header class="header">
+
+            <div class="navbar-absolute">
+  <nav class="transparent z-depth-0">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+     
+          <a href="#" class="brand-logo" target="_blank">Materialize Framework</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" target="_blank">Github</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Docs</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</div>
+
+
+
+
+        <div class="text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary-main">Green</span>
+            <span class="heading-primary-sub">Is something that we can't lose</span>
+        </h1>
+        </div>
+    </header>
+    
+    <header class="header-secondary">
+        <h1 class="heading-sec" data-aos="fade-right">Learn More</h1>
+        <h1 class="learn-text" data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti modi corporis laudantium dolor atque. Alias suscipit, autem repudiandae pariatur excepturi dolorem a, reiciendis nulla, accusamus quo minus esse tempora eligendi?</h1>
+    </header>
+
+
+</body>
+</html>
